@@ -14,13 +14,12 @@ This project is a full-stack web application that displays events in **Sydney, A
 
 ---
 
-### ⚠️ What Was Difficult / Issues Faced
+### ⚠️ What Was Difficult
 
 * **Scraper Issues**: Initially, incorrect selectors caused 0 results. Fixed using browser Inspect tool.
-* **React Modal**: Tried adding a modal for email input, but it did not render correctly due to logic or CSS issues. Was still debugging at deadline.
+* **React Modal**: Attempted to implement a modal for email input before redirection. Encountered rendering issues likely related to logic or CSS, and it's currently under refinement for future completion.
 * **Backend Fetch Errors**: Faced CORS and timing issues when frontend loaded before backend was ready. Fixed with proper setup.
 * **React Confusion**: Mixed up Vite and CRA commands (`npm run dev` vs `npm start`)—corrected after realizing this was a CRA project.
-* **Time Pressure**: Could not complete email storage or full modal functionality due to time limits.
 
 ---
 
