@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+## 📝 Sydney Events – Project Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a full-stack web application that displays events in **Sydney, Australia**. The event data is scraped from [Eventbrite](https://www.eventbrite.com/) using Python and shown on a React-based website. Users can click a **"GET TICKETS"** button to view events and will be asked for their email before being redirected to the original event page (email modal still in progress).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### ✅ What We Completed
 
-### `npm start`
+* Created a Python scraper using **Selenium** and **BeautifulSoup** to extract event data from Eventbrite.
+* Built a **Node.js + Express** backend to serve the scraped data via an `/events` endpoint.
+* Built a **React frontend** to fetch and display the event list in a clean and minimal UI.
+* Set up button functionality to eventually collect email and redirect users.
+* Successfully connected frontend and backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ⚠️ What Was Difficult / Issues Faced
 
-### `npm test`
+* **Scraper Issues**: Initially, incorrect selectors caused 0 results. Fixed using browser Inspect tool.
+* **React Modal**: Tried adding a modal for email input, but it did not render correctly due to logic or CSS issues. Was still debugging at deadline.
+* **Backend Fetch Errors**: Faced CORS and timing issues when frontend loaded before backend was ready. Fixed with proper setup.
+* **React Confusion**: Mixed up Vite and CRA commands (`npm run dev` vs `npm start`)—corrected after realizing this was a CRA project.
+* **Time Pressure**: Could not complete email storage or full modal functionality due to time limits.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 📌 To Be Done (Future Plans)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Complete and fix the email input modal using React state.
+* Store user emails via a POST request in the backend.
+* Set up the scraper to run automatically (e.g., on a cron job).
+* Polish UI design further for mobile responsiveness.
+* Add event filtering by category, date, or interest.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💡 Tools & Resources
 
-### `npm run eject`
+* Python (Selenium, BeautifulSoup) – for scraping data
+* Node.js + Express – for API backend
+* React – for frontend UI
+* Axios – to fetch events from backend
+* **ChatGPT** – used throughout the project to help understand errors, debug, and learn concepts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
